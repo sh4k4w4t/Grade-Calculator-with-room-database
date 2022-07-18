@@ -8,13 +8,10 @@ import java.util.List;
 @Entity
 public class Semester {
     @PrimaryKey(autoGenerate = true)
-    int id;
+    public int id;
 
-    String semesterName;
-    double semesterCredit;
-
-    public Semester() {
-    }
+    public String semesterName;
+    public double semesterCredit;
 
     public Semester(String semesterName, double semesterCredit) {
         this.semesterName = semesterName;
